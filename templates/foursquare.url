@@ -1,0 +1,1 @@
+https://api.foursquare.com/v2/venues/explore?near={{landmark}} {{country}}&client_id={{clientId}}&client_secret={{clientSecret}}&v={{version}}&limit={{limit}}&section={{section}}

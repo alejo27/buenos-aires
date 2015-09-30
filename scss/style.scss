@@ -1,0 +1,82 @@
+@import 'variables';
+
+a, a:visited {
+  color: $primary;
+  display: block;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: $accent;
+  font-weight: bolder;
+}
+
+body, html, .canvas, .container {
+  height: $full;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $text-primary;
+  font-family: $font;
+  font-size: $font-size;
+}
+
+input[type="text"] {
+  border: solid 1px $primary-light;
+  font-family: $font;
+  font-size: $font-size;
+  padding: 10px;
+  transition: box-shadow $transition-time, border $transition-time;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+  border: solid 1px $primary-light;
+  box-shadow: 0 0 5px 1px $primary-dark;
+}
+
+.info {
+  color: $text-secondary;
+}
+
+h1, h3 {
+  color: $primary;
+}
+
+.menu {
+  background-color: $base;
+  filter: alpha(opacity=60);
+  right: 100px;
+  margin: 20px;
+  opacity: 0.6;
+  position: absolute;
+  top: 50px;
+}
+
+.menu li {
+  border-bottom: 1px solid $divider;
+  list-style-type: none;
+  padding: 10px 5px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.selected {
+	background-color: $primary-dark;
+
+  a {
+    color: $accent;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}

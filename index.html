@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Buenos Aires, Argentina</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSbpD3sa6t6h7p73SoEm-KhyFZQgnTz04"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="js-map-canvas" class="canvas"></div>
+		<div id="js-map-menu" class="menu">
+			<input type="text" placeholder="Search..." data-bind="value: query, valueUpdate: 'input', event: {input: search()}">
+			<ul data-bind="foreach: landmarkList">
+        <li data-bind="click: select, css: { selected: selected() }">
+      		<a href="#" data-bind="text: name"></a>
+    		</li>
+    	</ul>
+		</div>
+	</div>
+	<script src="dist/bundle.js" charset="utf-8"></script>
+</body>
+</html>
