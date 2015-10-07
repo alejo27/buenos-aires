@@ -20,13 +20,13 @@ body, html, .canvas, .container {
 body {
   color: $text-primary;
   font-family: $font;
-  font-size: $font-size;
+  font-size: $font-regular;
 }
 
 input[type="text"] {
   border: solid 1px $primary-light;
   font-family: $font;
-  font-size: $font-size;
+  font-size: $font-regular;
   padding: 10px;
   transition: box-shadow $transition-time, border $transition-time;
 }
@@ -43,6 +43,7 @@ input[type="text"].focus {
 
 h1, h3 {
   color: $primary;
+  margin-bottom: 0;
 }
 
 .menu {
@@ -64,6 +65,14 @@ h1, h3 {
 .menu ul {
   margin: 0;
   padding: 0;
+}
+
+.powered-by {
+  a {
+    display: inline-block;
+  }
+
+  font-size: $font-small;
 }
 
 .selected {
